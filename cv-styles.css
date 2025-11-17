@@ -1,0 +1,47 @@
+/* Base Styles */
+body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+}
+.cv-container::after {
+content: "Default View";
+display: block;
+font-size: 2em;
+text-align: center;
+padding: 50px 0;
+color: black;
+}
+
+/* Mobile View */
+@media only screen and (max-width: 599px) {
+body {
+    background-color: #dd2727; /* Red */
+}
+.cv-container::after {
+    content: "Mobile View";
+    color: white;
+}
+}
+
+/* Tablet View */
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+body {
+    background-color: #2f078e; /* Blue */
+}
+.cv-container::after {
+    content: "Tablet View";
+    color: white;
+}
+}
+
+/* Desktop View */
+@media only screen and (min-width: 900px) {
+body {
+    background-color: #057d3d;  /* Green */
+}
+.cv-container::after {
+    content: "Desktop View";
+    color: white;
+}
+}
